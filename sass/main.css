@@ -8,9 +8,14 @@
   display: none;
 }
 
+body {
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  height: 100vh;
+}
+
 .card {
-  background-color: hsl(240deg, 73%, 65%);
+  background-color: white;
 }
 .card .card__section-1 .card-img-mob {
-  width: 100%;
+  width: 10%;
 }/*# sourceMappingURL=main.css.map */

@@ -10,8 +10,9 @@ $Very-dark-desaturated-blue : hsl(238, 29%, 16%);
 $Soft-red: hsl(14, 88%, 65%);
 
 // gradient
-$Soft-violet: hsl(273, 75%, 66%);
-$Soft-blue: hsl(240, 73%, 65%);
+// $Soft-violet: hsl(273, 75%, 66%);
+// $Soft-blue: hsl(240, 73%, 65%);
+$gradient:linear-gradient( hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
 
 // text
 $Very-dark-grayish-blue: hsl(237, 12%, 33%);
@@ -26,14 +27,19 @@ $Light-grayish-blue: hsl(240, 5%, 91%);
     display: none;
 }
 
+body{
+    background-image: $gradient;
+    height: 100vh;
+}
+
 .card{
 
-    background-color: $Soft-blue;
-
+    background-color: white;
+    
     .card__section-1{
 
         .card-img-mob{
-            width: 100%;
+            width: 10%;
         }
     }
 }
