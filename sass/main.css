@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
 body {
   background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .card {

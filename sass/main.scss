@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -30,12 +31,13 @@ $Light-grayish-blue: hsl(240, 5%, 91%);
 body{
     background-image: $gradient;
     height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card{
 
     background-color: white;
-    
+
     .card__section-1{
 
         .card-img-mob{
