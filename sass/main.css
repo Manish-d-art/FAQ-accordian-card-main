@@ -1,1 +1,13 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.card .card__section-1 .card-img-mob {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
