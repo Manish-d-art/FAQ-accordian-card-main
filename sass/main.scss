@@ -5,12 +5,31 @@
     box-sizing: border-box;
 }
 
+// Text
+$Very-dark-desaturated-blue : hsl(238, 29%, 16%);
+$Soft-red: hsl(14, 88%, 65%);
+
+// gradient
+$Soft-violet: hsl(273, 75%, 66%);
+$Soft-blue: hsl(240, 73%, 65%);
+
+// text
+$Very-dark-grayish-blue: hsl(237, 12%, 33%);
+$Dark-grayish-blue: hsl(240, 6%, 50%);
+
+// dividers
+$Light-grayish-blue: hsl(240, 5%, 91%);
+
+
+
 .hidden{
     display: none;
 }
 
 .card{
-    
+
+    background-color: $Soft-blue;
+
     .card__section-1{
 
         .card-img-mob{

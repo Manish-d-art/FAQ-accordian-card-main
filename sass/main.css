@@ -8,6 +8,9 @@
   display: none;
 }
 
+.card {
+  background-color: hsl(240deg, 73%, 65%);
+}
 .card .card__section-1 .card-img-mob {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
