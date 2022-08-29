@@ -32,16 +32,40 @@ body{
     background-image: $gradient;
     height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
-
+    width:min(90%,900px);
+    margin-top: 12rem;
     background-color: white;
+    border-radius: 25px;
+    // padding:1.5rem;
+    // padding-left:clamp(1.5rem,2.234375rem+4.7vw,5rem);
+    // padding-right:clamp(1.5rem,2.234375rem+4.7vw,5rem);
+
+
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+    }
 
     .card__section-1{
-
+        display: flex;
+        justify-content: center;
         .card-img-mob{
-            width: 10%;
+            width: 70%;
+            position: relative;
+            top:-106px;            
+
         }
+        
+    }
+    
+    .card__section-2{
+
     }
 }
