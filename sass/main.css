@@ -11,11 +11,9 @@
 
 body {
   background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
-  height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .card {
@@ -23,6 +21,7 @@ body {
   margin-top: 12rem;
   background-color: white;
   border-radius: 25px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .card {
@@ -32,10 +31,11 @@ body {
 }
 .card .card__section-1 {
   display: flex;
+  height: 40vh;
   justify-content: center;
 }
 .card .card__section-1 .card-img-mob {
   width: 70%;
-  position: relative;
+  position: absolute;
   top: -106px;
 }/*# sourceMappingURL=main.css.map */
