@@ -77,11 +77,44 @@ body{
 
         .horizontal-line{
             margin: 1rem 0;
+            height: 1px;
+            // color: $Dark-grayish-blue;
+            border: none;
+            background-color:  $Dark-grayish-blue;
         }
 
         .heading{
             text-align: center;
             margin-bottom: 3rem;
+
         }
+
+        .card__Question-block{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        
+        .accordian{
+            color:$Very-dark-desaturated-blue;
+
+            .arrow-icon{
+                width:.7rem;
+                height: .5rem;
+            }
+            .Question{
+                font-weight: 400;
+                font-size: .86rem;
+                margin-bottom: 1rem;
+            }
+
+            .Answer{
+                margin-right:clamp(2rem,5vw,4rem);
+                color: $Dark-grayish-blue;
+            }
+        }
+
+
     }
 }
