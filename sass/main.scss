@@ -35,6 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     // height: 100vh;
+    Font-size: 12px;
 }
 
 .card{
@@ -73,5 +74,14 @@ body{
           padding-bottom: 2rem;
           margin-top: 10rem;
         //   text-align: center;
+
+        .horizontal-line{
+            margin: 1rem 0;
+        }
+
+        .heading{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
     }
 }

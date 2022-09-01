@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  Font-size: 12px;
 }
 
 .card {
@@ -44,4 +45,11 @@ body {
   padding-right: clamp(1.5rem, 4.7vw, 5rem);
   padding-bottom: 2rem;
   margin-top: 10rem;
+}
+.card .card__section-2 .horizontal-line {
+  margin: 1rem 0;
+}
+.card .card__section-2 .heading {
+  text-align: center;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=main.css.map */
