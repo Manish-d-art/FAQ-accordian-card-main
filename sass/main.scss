@@ -34,8 +34,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 100vh;
     Font-size: 12px;
+    @media (min-width:768px) {
+        height: 100vh;
+    }
 }
 
 .card{
@@ -43,25 +45,29 @@ body{
     margin: 12rem 0 6rem 0;
     background-color: white;
     border-radius: 25px;
-    overflow: hidden;
 
 
     @media (min-width:768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        overflow: hidden;
+        margin:0 !important;
+
+
     }
 
     .card__section-1{
         display: flex;
         justify-content: center;
         position: relative;
+        align-items: center;
         @media (min-width:768px) {
             flex-basis: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            // flex-basis: 50%;
             
         }
         .card-img-mob{
@@ -89,24 +95,43 @@ body{
                 
             }
         }
+        .card-img-desk-bg{
+            
+            display: none;
+            @media (min-width:768px) {
+                display: block !important; 
+                width:700px;
+                position: absolute;
+                top:-190px;
+                right:170px;
+                z-index:1 ;
+            }
+        }
     }
         .card-img-desk{
             display: none;
             @media (min-width:768px) {
             display: block !important;
-            width:100%;
+            width:75%;
             // height:300px;
             position: absolute;
-            right:30px;
+            top:50px;
+            right:160px;
+            z-index: 2;
         }
     }
     
     .card__section-2{
         @media (min-width:768px) {
+            margin-top: 0 !important;
             flex-basis: 50%;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+            padding-left: 0 !important;
+            
         }
         // padding-left:clamp(1.5rem,2.234375rem + 4.7vw,5rem);
-          padding-left: clamp(1.5rem,  4.7vw, 5rem) !important;
+          padding-left: clamp(1.5rem,  4.7vw, 2rem) !important;
 
         // padding-right:clamp(1.5rem,2.234375rem + 4.7vw,5rem);
           padding-right: clamp(1.5rem,4.7vw, 5rem);
@@ -115,7 +140,7 @@ body{
         //   text-align: center;
 
         hr{
-            margin: 1rem 0;
+            margin: .5rem 0;
             border-style: solid;
             border-width: 0 0 1px 0;
             border-color: $Light-grayish-blue;
@@ -124,6 +149,9 @@ body{
         .heading{
              text-align: center;
             margin-bottom: 3rem;
+            @media (min-width:768px){
+                text-align: start !important;
+            }
            
         }
 
@@ -153,7 +181,7 @@ body{
             .Question{
                 font-weight: 400;
                 font-size: .86rem;
-                margin-bottom: 1rem;
+                margin-bottom: .5rem;
             }
 
             .Answer{
