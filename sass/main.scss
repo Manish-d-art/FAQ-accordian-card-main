@@ -35,13 +35,13 @@ body{
     justify-content: center;
     align-items: center;
     Font-size: 12px;
-    @media (min-width:768px) {
+    // @media (min-width:768px) {
         height: 100vh;
-    }
+    // }
 }
 
 .card{
-    width:min(90%,900px);
+    width:min(90%,800px);
     margin: 12rem 0 6rem 0;
     background-color: white;
     border-radius: 25px;
@@ -98,28 +98,46 @@ body{
         .card-img-desk-bg{
             
             display: none;
-            @media (min-width:768px) {
+            @media (min-width:951px) {
                 display: block !important; 
                 width:700px;
                 position: absolute;
-                top:-190px;
-                right:170px;
+                top:-177px;
+                right:107px;
                 z-index:1 ;
             }
+            @media (min-width:768px) and (max-width:950px) {
+                display: block !important;
+                width: 204%;
+                position: absolute;
+                top: -216px;
+                right: 97px;
+                z-index: 1;
+               }
+           
         }
     }
         .card-img-desk{
             display: none;
-            @media (min-width:768px) {
+            @media (min-width:950px) {
             display: block !important;
-            width:75%;
+            width:94% !important;
             // height:300px;
             position: absolute;
             top:50px;
-            right:160px;
+            right:86px;
             z-index: 2;
-        }
-    }
+            }
+            @media (min-width:768px) and (max-width:950px) {
+                display: block !important;
+                width: 95%;
+                position: absolute;
+                top: 52px;
+                right: 78px;
+                z-index: 2;
+                
+            }
+         }
     
     .card__section-2{
         @media (min-width:768px) {
