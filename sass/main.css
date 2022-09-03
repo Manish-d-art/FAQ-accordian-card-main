@@ -20,7 +20,7 @@ body {
 
 .card {
   width: min(90%, 900px);
-  margin-top: 12rem;
+  margin: 12rem 0 6rem 0;
   background-color: white;
   border-radius: 25px;
 }
@@ -28,12 +28,21 @@ body {
   .card {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 .card .card__section-1 {
   display: flex;
   justify-content: center;
   position: relative;
+}
+@media (min-width: 768px) {
+  .card .card__section-1 {
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .card .card__section-1 .card-img-mob {
   width: 70%;
@@ -50,12 +59,32 @@ body {
     bottom: -6.5rem;
   }
 }
-.card .card-img-mob-bg {
+@media (min-width: 768px) {
+  .card .card__section-1 .card-img-mob {
+    display: none;
+  }
+}
+.card .card__section-1 .card-img-mob-bg {
   position: absolute;
   width: 70%;
 }
+@media (min-width: 768px) {
+  .card .card__section-1 .card-img-mob-bg {
+    display: none;
+  }
+}
+.card .card-img-desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .card .card-img-desk {
+    display: block !important;
+    width: 100%;
+    position: absolute;
+  }
+}
 .card .card__section-2 {
-  padding-left: clamp(1.5rem, 4.7vw, 5rem);
+  padding-left: clamp(1.5rem, 4.7vw, 5rem) !important;
   padding-right: clamp(1.5rem, 4.7vw, 5rem);
   padding-bottom: 2rem;
   margin-top: 10rem;
@@ -74,11 +103,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
 }
 .card .card__section-2 .card__Question-block:hover {
-  color: hsl(14deg, 88%, 65%);
-}
-.card .card__section-2 .card__Question-block:active {
   color: hsl(14deg, 88%, 65%);
 }
 .card .card__section-2 .accordian {
@@ -88,6 +115,11 @@ body {
   width: 0.7rem;
   height: 0.5rem;
 }
+@media (min-width: 768px) {
+  .card .card__section-2 .accordian .arrow-icon {
+    margin-left: 3rem;
+  }
+}
 .card .card__section-2 .accordian .Question {
   font-weight: 400;
   font-size: 0.86rem;
@@ -96,4 +128,5 @@ body {
 .card .card__section-2 .accordian .Answer {
   margin-right: clamp(2rem, 5vw, 4rem);
   color: hsl(240deg, 6%, 50%);
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -40,7 +40,7 @@ body{
 
 .card{
     width:min(90%,900px);
-    margin-top: 12rem;
+    margin: 12rem 0 6rem 0;
     background-color: white;
     border-radius: 25px;
 
@@ -48,13 +48,21 @@ body{
     @media (min-width:768px) {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .card__section-1{
         display: flex;
-        // height:40vh;
         justify-content: center;
         position: relative;
+        @media (min-width:768px) {
+            flex-basis: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
         .card-img-mob{
             width: 70%;
             position: absolute;
@@ -65,19 +73,35 @@ body{
             }
             @media (min-width:500px) and (max-width:767px) {
                 bottom: -6.5rem;
-                }
+            }
+            @media (min-width:768px) {
+                display: none;
+                
+            }
+           
         } 
+        .card-img-mob-bg{
+            position:absolute;
+            width:70%;
+            @media (min-width:768px) {
+                display: none;
+                
+            }
+        }
     }
-    .card-img-mob-bg{
-        position:absolute;
-        width:70%;
-        // bottom: 1.5rem;
-
+        .card-img-desk{
+            display: none;
+            @media (min-width:768px) {
+            display: block !important;
+            width:100%;
+            // height:300px;
+            position: absolute;
+        }
     }
     
     .card__section-2{
         // padding-left:clamp(1.5rem,2.234375rem + 4.7vw,5rem);
-          padding-left: clamp(1.5rem,  4.7vw, 5rem);
+          padding-left: clamp(1.5rem,  4.7vw, 5rem) !important;
 
         // padding-right:clamp(1.5rem,2.234375rem + 4.7vw,5rem);
           padding-right: clamp(1.5rem,4.7vw, 5rem);
@@ -102,12 +126,9 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            // cursor: pointer;
+            cursor: pointer;
             &:hover{
-                color:$Soft-red;
-            }
-            &:active{
-                color:$Soft-red;
+                color: $Soft-red;
             }
 
         }
@@ -119,6 +140,10 @@ body{
             .arrow-icon{
                 width:.7rem;
                 height: .5rem;
+                @media (min-width:768px) {
+                     margin-left: 3rem;
+                    
+                }
             }
             .Question{
                 font-weight: 400;
@@ -129,6 +154,7 @@ body{
             .Answer{
                 margin-right:clamp(2rem,5vw,4rem);
                 color: $Dark-grayish-blue;
+                display: none;
             }
         }
 
