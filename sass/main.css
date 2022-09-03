@@ -38,7 +38,17 @@ body {
 .card .card__section-1 .card-img-mob {
   width: 70%;
   position: absolute;
-  bottom: -5rem;
+  bottom: -4.5rem;
+}
+@media (max-width: 285px) {
+  .card .card__section-1 .card-img-mob {
+    bottom: -3.5rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .card .card__section-1 .card-img-mob {
+    bottom: -6.5rem;
+  }
 }
 .card .card__section-2 {
   padding-left: clamp(1.5rem, 4.7vw, 5rem);

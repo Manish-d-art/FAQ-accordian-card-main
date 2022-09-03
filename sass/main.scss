@@ -59,7 +59,14 @@ body{
             width: 70%;
             position: absolute;
             // top:-106px;            
-            bottom: -5rem;
+            bottom: -4.5rem;
+            @media (max-width:285px) {
+            bottom: -3.5rem ;
+            }
+            @media (min-width:500px) and (max-width:767px) {
+                bottom: -6.5rem;
+                }
+
 
         }
         
