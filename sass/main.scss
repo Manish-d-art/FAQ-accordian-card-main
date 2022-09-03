@@ -42,7 +42,7 @@ body{
 
 .card{
     width:min(90%,800px);
-    margin: 12rem 0 6rem 0;
+    margin: 16rem 0 6rem 0;
     background-color: white;
     border-radius: 25px;
 
@@ -174,9 +174,8 @@ body{
         }
 
         .card__Question-block{
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
+            // display: flex;
+            // justify-content: space-between;
             cursor: pointer;
             &:hover{
                 color: $Soft-red;
@@ -188,18 +187,28 @@ body{
         .accordian{
             color:$Very-dark-desaturated-blue;
 
+            .btn-arrow{
+                all: unset;
+                width: 100%;
+                text-align: start;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+            }
+
             .arrow-icon{
                 width:.7rem;
                 height: .5rem;
                 @media (min-width:768px) {
-                     margin-left: 3rem;
+                    //  margin-left: 3rem;
                     
                 }
             }
             .Question{
                 font-weight: 400;
                 font-size: .86rem;
-                margin-bottom: .5rem;
+                margin: 0.5rem 0;
             }
 
             .Answer{

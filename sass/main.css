@@ -21,7 +21,7 @@ body {
 
 .card {
   width: min(90%, 800px);
-  margin: 12rem 0 6rem 0;
+  margin: 16rem 0 6rem 0;
   background-color: white;
   border-radius: 25px;
 }
@@ -154,9 +154,6 @@ body {
   }
 }
 .card .card__section-2 .card__Question-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   cursor: pointer;
 }
 .card .card__section-2 .card__Question-block:hover {
@@ -165,19 +162,22 @@ body {
 .card .card__section-2 .accordian {
   color: hsl(238deg, 29%, 16%);
 }
+.card .card__section-2 .accordian .btn-arrow {
+  all: unset;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .card .card__section-2 .accordian .arrow-icon {
   width: 0.7rem;
   height: 0.5rem;
 }
-@media (min-width: 768px) {
-  .card .card__section-2 .accordian .arrow-icon {
-    margin-left: 3rem;
-  }
-}
 .card .card__section-2 .accordian .Question {
   font-weight: 400;
   font-size: 0.86rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 .card .card__section-2 .accordian .Answer {
   margin-right: clamp(2rem, 5vw, 4rem);
