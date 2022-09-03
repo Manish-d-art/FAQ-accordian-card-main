@@ -35,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     Font-size: 12px;
-        height: 100vh;
+    height: 100vh;
 }
 
 .card{
@@ -54,7 +54,17 @@ body{
 
 
     }
-
+        .card-img-desk-box{
+                    display: none;
+                    @media (min-width:768px) {
+                        display: block !important;
+                        position: absolute;
+                        width: 152px;
+                        top: 338px;
+                        z-index: 3;
+                        left: 196px;
+                    }
+                }
     .card__section-1{
         display: flex;
         justify-content: center;
@@ -111,7 +121,6 @@ body{
             }
            
         }
-    }
         .card-img-desk{
             display: none;
             @media (min-width:950px) {
@@ -131,6 +140,9 @@ body{
                 z-index: 2;
             }
          }
+         
+    }
+       
     
     .card__section-2{
         @media (min-width:768px) {
