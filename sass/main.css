@@ -50,17 +50,21 @@ body {
     bottom: -6.5rem;
   }
 }
+.card .card-img-mob-bg {
+  position: absolute;
+  width: 70%;
+}
 .card .card__section-2 {
   padding-left: clamp(1.5rem, 4.7vw, 5rem);
   padding-right: clamp(1.5rem, 4.7vw, 5rem);
   padding-bottom: 2rem;
   margin-top: 10rem;
 }
-.card .card__section-2 .horizontal-line {
+.card .card__section-2 hr {
   margin: 1rem 0;
-  height: 1px;
-  border: none;
-  background-color: hsl(240deg, 6%, 50%);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: hsl(240deg, 5%, 91%);
 }
 .card .card__section-2 .heading {
   text-align: center;
@@ -70,6 +74,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
+}
+.card .card__section-2 .card__Question-block:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.card .card__section-2 .card__Question-block:active {
+  color: hsl(14deg, 88%, 65%);
 }
 .card .card__section-2 .accordian {
   color: hsl(238deg, 29%, 16%);
