@@ -74,7 +74,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  cursor: pointer;
 }
 .card .card__section-2 .card__Question-block:hover {
   color: hsl(14deg, 88%, 65%);
