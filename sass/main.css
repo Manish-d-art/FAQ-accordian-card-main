@@ -12,27 +12,11 @@
 body {
   background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   font-family: "Kumbh Sans", sans-serif;
-  Font-size: 12px;
-}
-
-.main {
   display: flex;
   justify-content: center;
   align-items: center;
+  Font-size: 12px;
   height: 100vh;
-}
-.main .card-img-desk-box {
-  display: none;
-}
-@media (min-width: 768px) {
-  .main .card-img-desk-box {
-    display: block !important;
-    position: absolute;
-    width: 152px;
-    top: 338px;
-    z-index: 3;
-    left: 196px;
-  }
 }
 
 .card {
@@ -48,6 +32,19 @@ body {
     justify-content: space-around;
     overflow: hidden;
     margin: 0 !important;
+  }
+}
+.card .card-img-desk-box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .card .card-img-desk-box {
+    display: block !important;
+    position: absolute;
+    width: 152px;
+    top: 338px;
+    z-index: 3;
+    left: 196px;
   }
 }
 .card .card__section-1 {
