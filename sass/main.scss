@@ -31,11 +31,25 @@ $Light-grayish-blue: hsl(240, 5%, 91%);
 body{
     background-image: $gradient;
     font-family: 'Kumbh Sans', sans-serif;
+    Font-size: 12px;
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
-    Font-size: 12px;
     height: 100vh;
+    .card-img-desk-box{
+        display: none;
+        @media (min-width:768px) {
+            display: block !important;
+            position: absolute;
+            width: 152px;
+            top: 338px;
+            z-index: 3;
+            left: 196px;
+        }
+    }
+
 }
 
 .card{
@@ -54,17 +68,7 @@ body{
 
 
     }
-        .card-img-desk-box{
-                    display: none;
-                    @media (min-width:768px) {
-                        display: block !important;
-                        position: absolute;
-                        width: 152px;
-                        top: 338px;
-                        z-index: 3;
-                        left: 196px;
-                    }
-                }
+        
     .card__section-1{
         display: flex;
         justify-content: center;
