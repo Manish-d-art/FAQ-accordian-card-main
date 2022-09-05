@@ -9,6 +9,15 @@
   display: none;
 }
 
+.show {
+  display: block;
+}
+
+.qstn-style {
+  font-weight: 600;
+  color: black;
+}
+
 body {
   background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   font-family: "Kumbh Sans", sans-serif;
@@ -199,5 +208,4 @@ body {
 .card .card__section-2 .accordian .Answer {
   margin-right: clamp(2rem, 5vw, 4rem);
   color: hsl(240deg, 6%, 50%);
-  display: none;
 }/*# sourceMappingURL=main.css.map */
