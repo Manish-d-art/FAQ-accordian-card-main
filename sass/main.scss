@@ -43,13 +43,12 @@ body{
     margin: 14rem 0 6rem 0;
     background-color: white;
     border-radius: 25px;
-
+    position: relative;
 
     @media (min-width:768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        overflow: hidden;
         margin:0 !important;
 
 
@@ -60,9 +59,9 @@ body{
                         display: block !important;
                         position: absolute;
                         width: 152px;
-                        top: 338px;
+                        top: 36%;
                         z-index: 3;
-                        left: 196px;
+                        right: 180%;
                     }
                 }
     .card__section-1{
@@ -75,6 +74,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
 
         .card-img-mob{
@@ -145,6 +145,7 @@ body{
        
     
     .card__section-2{
+        position: relative;
         @media (min-width:768px) {
             margin-top: 0 !important;
             flex-basis: 50%;
