@@ -46,13 +46,14 @@ body{
     font-family: "Kumbh Sans", sans-serif;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     Font-size: 12px;
-    /* height: 100vh; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @media (min-width:768px){
+        padding:10rem 0 !important;
+    }
 }
 
 .card{
@@ -163,7 +164,7 @@ body{
                 display: block !important;
                 position: absolute;
                 width: 152px;
-                top: 36%;
+                top:156px;
                 z-index: 3;
                 right: 180%;
             }
