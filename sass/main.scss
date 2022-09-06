@@ -42,13 +42,17 @@ $Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
 body{
-    background-image: $gradient;
-    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+    font-family: "Kumbh Sans", sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     Font-size: 12px;
-    height: 100vh;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .card{
@@ -221,6 +225,8 @@ body{
             .Answer{
                 margin-right:clamp(2rem,5vw,4rem);
                 color: $Dark-grayish-blue;
+                // transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
             }
         }
 

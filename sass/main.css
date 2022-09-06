@@ -23,9 +23,13 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   Font-size: 12px;
-  height: 100vh;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .card {
