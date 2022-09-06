@@ -8,6 +8,7 @@ section2.addEventListener('click',function(e){
             return;
         }
         click.querySelector('.Question').classList.toggle('qstn-style');
+        click.querySelector('.arrow-icon').classList.toggle('arrow-style');
         const a=click.dataset.a;
         document.querySelector(`.Answer-${a}`).classList.toggle('show');
 })
