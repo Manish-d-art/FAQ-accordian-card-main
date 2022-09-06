@@ -37,8 +37,11 @@ $Light-grayish-blue: hsl(240, 5%, 91%);
     display: block;
 }
 .qstn-style{
-    font-weight: 600;
+    font-weight: 700;
     color:black;
+}
+.arrow-style{
+    transform: rotate(180deg);
 }
 
 body{
@@ -218,7 +221,7 @@ body{
             }
             
             .Question{
-                font-weight: 400;
+                // font-weight: 400;
                 font-size: .86rem;
                 margin: 0.5rem 0;
             }
@@ -226,6 +229,7 @@ body{
             .Answer{
                 margin-right:clamp(2rem,5vw,4rem);
                 color: $Dark-grayish-blue;
+                transition: .3s;
                 // transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
             }
