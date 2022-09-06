@@ -196,6 +196,9 @@ body{
 
         .card__Question-block{
             cursor: pointer;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
             &:hover{
                 color: $Soft-red;
             }

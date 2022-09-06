@@ -191,6 +191,9 @@ body {
 }
 .card .card__section-2 .card__Question-block {
   cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 .card .card__section-2 .card__Question-block:hover {
   color: hsl(14deg, 88%, 65%);
