@@ -221,7 +221,6 @@ body{
             }
             
             .Question{
-                // font-weight: 400;
                 font-size: .86rem;
                 margin: 0.5rem 0;
             }
@@ -230,7 +229,6 @@ body{
                 margin-right:clamp(2rem,5vw,4rem);
                 color: $Dark-grayish-blue;
                 transition: .3s;
-                // transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
             }
         }
